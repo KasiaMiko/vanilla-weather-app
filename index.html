@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="src/style.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        <link rel="stylesheet" href="src/style.css">
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <div class= "container">
-        <div class="wearherApp">
+        <div class="weatherApp-wrapper">
+        <div class="weatherApp">
             <form id="search-form">
                 <input class="enterCity" type="text" id="search-text-input"
                     placeholder="In which city would you like to check the weather?" />
@@ -23,70 +25,81 @@
     <div class="row">
 <div class="col-4">
     <ul>
+        <div class="currentDay">
         <li>Thursday</li>
-        <li>16:00</li>
+    </div>
+        <div class="currentTime">
+<li>16:00</li>
+        </div>
+        <div class="weatherCondition">
         <li>Clear</li>
+        </div>
     </ul>
 </div>
 <div class="col-4">
-    <p>☀️</p>
+    <div class="weatherIcon"><p>☀️</p></div>
 </div>
 <div class="col-4">
     <ul>
-        <li>11 °C | °F</li>
+        <div class="temperature">
+        <li>11 <strong>°C | °F</strong></li>
+        </div>
+        <div class="wind">
         <li> Wind : 11 km/h</li>
+        </div>
     </ul>
 </div>
     </div>
     <br />
-    <div class="container weatherCards">
+    <div class="containerWeatherCards">
         <div class="row">
             <div class="col-2">
                     <div class="card-body">
-                        <h4 >☁️</h4>
-                        <h5 >Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                 </div>
             </div>
             <div class="col-2">
                     <div class="card-body">
-                        <h4>☁️</h4>
-                        <h5>Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                     </div>     
             </div>
             <div class="col-2">
                     <div class="card-body">
-                        <h4>☁️</h4>
-                        <h5>Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                     </div>
             </div>
             <div class="col-2">
                     <div class="card-body">
-                        <h4>☁️</h4>
-                        <h5>Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                     </div>
             </div>
             <div class="col-2">
                     <div class="card-body">
-                        <h4>☁️</h4>
-                        <h5>Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                     </div>  
             </div>  
             <div class="col-2">
                     <div class="card-body">
-                        <h4>☁️</h4>
-                        <h5>Sunday</h5>
-                        <h5>13° C </h5>
+                        <h4 class="forecastIcon">☁️</h4>
+                        <h5 class="forecastDay">Sunday</h5>
+                        <h5 class="forecastTemp">13° C </h5>
                     </div>
             </div>
     </div>  
     </div>
-    <p><a href="https://github.com/KasiaMiko/vanilla-weather-app">Open-source code</a> by Katarzyna Mikoszewska</p>
-    
+    </div>
+    <p><a href="https://github.com/KasiaMiko/vanilla-weather-app" target="_blank">Open-source code</a> by Katarzyna
+        Mikoszewska</p>
     </div>
     </div>
     <script src="src/app.js"></script>
