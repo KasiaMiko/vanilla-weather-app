@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
@@ -11,7 +11,83 @@
 </head>
 <body>
     <div class= "container">
-    <h1>Hello world</h1>
+        <div class="wearherApp">
+            <form id="search-form">
+                <input class="enterCity" type="text" id="search-text-input"
+                    placeholder="In which city would you like to check the weather?" />
+            
+                <input type="submit" class="btn btn-info" value="Submit" />
+                <button class="btn btn-success"> Current </button>
+            </form>
+    <h1>Wroclaw</h1>
+    <div class="row">
+<div class="col-4">
+    <ul>
+        <li>Thursday</li>
+        <li>16:00</li>
+        <li>Clear</li>
+    </ul>
+</div>
+<div class="col-4">
+    <p>☀️</p>
+</div>
+<div class="col-4">
+    <ul>
+        <li>11 °C | °F</li>
+        <li> Wind : 11 km/h</li>
+    </ul>
+</div>
+    </div>
+    <br />
+    <div class="container weatherCards">
+        <div class="row">
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4 >☁️</h4>
+                        <h5 >Sunday</h5>
+                        <h5>13° C </h5>
+                </div>
+            </div>
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4>☁️</h4>
+                        <h5>Sunday</h5>
+                        <h5>13° C </h5>
+                    </div>     
+            </div>
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4>☁️</h4>
+                        <h5>Sunday</h5>
+                        <h5>13° C </h5>
+                    </div>
+            </div>
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4>☁️</h4>
+                        <h5>Sunday</h5>
+                        <h5>13° C </h5>
+                    </div>
+            </div>
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4>☁️</h4>
+                        <h5>Sunday</h5>
+                        <h5>13° C </h5>
+                    </div>  
+            </div>  
+            <div class="col-2">
+                    <div class="card-body">
+                        <h4>☁️</h4>
+                        <h5>Sunday</h5>
+                        <h5>13° C </h5>
+                    </div>
+            </div>
+    </div>  
+    </div>
+    <p><a href="https://github.com/KasiaMiko/vanilla-weather-app">Open-source code</a> by Katarzyna Mikoszewska</p>
+    
+    </div>
     </div>
     <script src="src/app.js"></script>
 </body>
