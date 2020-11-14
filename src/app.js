@@ -33,6 +33,9 @@ function formatTime(timestamp) {
       let dayElement= document.querySelector("#day");
       let timeElement= document.querySelector("#time");
       let iconElement= document.querySelector("#icon");
+
+      celsiusTemperature=response.data.main.temp;
+
       temperatureElement.innerHTML=Math.round(response.data.main.temp);
       cityElement.innerHTML=response.data.name;
       windElement.innerHTML=response.data.wind.speed;
@@ -66,9 +69,35 @@ function currentLocation(){
 }
    navigator.geolocation.getCurrentPosition(getPosition);
  }
+function displayFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temp");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsius(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temp");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature=null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let currentButton = document.querySelector("button");
 currentButton.addEventListener("click", currentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit");
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", displayCelsius);
+
+search("Wroclaw");

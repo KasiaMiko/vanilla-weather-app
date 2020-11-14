@@ -23,12 +23,19 @@ li:first-letter {
   text-transform: capitalize;
 }
 .weatherApp-wrapper {
+  margin: 0 auto;
   max-width: 700px;
-  margin: 15px auto;
   color: #878787;
 }
 .weatherApp {
-  padding: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #878787;
+  border-radius: 6px;
+}
+.containerWeatherCards {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border: 1px solid #878787;
   border-radius: 6px;
 }
@@ -63,6 +70,13 @@ li:first-letter {
   position: relative;
   top: -24px;
   margin: 0;
+}
+.active {
+  color: #878787;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
 }
 .wind {
   text-align: center;
