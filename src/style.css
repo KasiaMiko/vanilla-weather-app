@@ -75,8 +75,10 @@ li:first-letter {
   color: #878787;
   cursor: default;
 }
+
 .active:hover {
-  text-decoration: none;
+  text-decoration-line: none;
+  color: #878787;
 }
 .wind {
   text-align: center;
