@@ -28,16 +28,19 @@ if (minutes <10){
   function displayVariables(response) {
       let temperatureElement= document.querySelector("#temp");
       let cityElement= document.querySelector("#city");
-      let windElement= document.querySelector("#wind")
-      let conditionElement= document.querySelector("#condition")
-      let dayElement= document.querySelector("#day")
-      let timeElement= document.querySelector("#time")
+      let windElement= document.querySelector("#wind");
+      let conditionElement= document.querySelector("#condition");
+      let dayElement= document.querySelector("#day");
+      let timeElement= document.querySelector("#time");
+      let iconElement= document.querySelector("#icon");
       temperatureElement.innerHTML=Math.round(response.data.main.temp);
       cityElement.innerHTML=response.data.name;
       windElement.innerHTML=response.data.wind.speed;
       conditionElement.innerHTML=response.data.weather[0].description;
       dayElement.innerHTML=formatDay(response.data.dt * 1000);
       timeElement.innerHTML=formatTime(response.data.dt * 1000);
+      iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+      iconElement.setAttribute("alt", response.data.weather[0].description);
   }
 
   let apiKey = "cac6eb1808e7ad8b2e537949ab1a8c09";
