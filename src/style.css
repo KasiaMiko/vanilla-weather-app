@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url(background.jpg);
-  background-size: 100%;
+  background-color: #f5f7f9;
+  color: #78838e;
 }
 
 h1 {
@@ -10,6 +10,7 @@ h1 {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #78838e;
 }
 button {
   margin-left: 10px;
@@ -28,27 +29,39 @@ li:first-letter {
 .weatherApp-wrapper {
   margin: 0 auto;
   max-width: 700px;
-  color: #878787;
+  color: #78838e;
 }
 .weatherApp {
   margin-top: 20px;
   padding: 15px;
-  border: 1px solid #878787;
+  border: 1px solid #cad2d9;
   border-radius: 6px;
-  background-color: white;
+  background-color: #ffffff;
 }
 .containerWeatherCards {
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #878787;
+  border: 1px solid #cad2d9;
   border-radius: 6px;
+  background-color: #ffffff;
 }
 .enterCity {
   width: 70%;
   border-radius: 4px;
-  border: 1px solid #878787;
+  border: 1px solid #cad2d9;
   padding: 5px;
   margin-right: 10px;
+  background-color: #f9fbfc;
+}
+#submitButton {
+  background-color: #55c2f7;
+  color: #3481b9;
+  border: 1px solid #cad2d9;
+}
+#currentButton {
+  background-color: #e3f8fe;
+  color: #c5d6df;
+  border: 1px solid #cad2d9;
 }
 .currentDay {
   font-size: 30px;
@@ -80,13 +93,13 @@ li:first-letter {
   margin: 0;
 }
 .active {
-  color: #878787;
+  color: #cad2d9;
   cursor: default;
 }
 
 .active:hover {
   text-decoration-line: none;
-  color: #878787;
+  color: #cad2d9;
 }
 .wind {
   text-align: center;
