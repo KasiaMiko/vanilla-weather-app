@@ -1,6 +1,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url(background.jpg);
+  background-size: 100%;
 }
+
 h1 {
   size: 30px;
   font-weight: 500;
@@ -32,6 +35,7 @@ li:first-letter {
   padding: 15px;
   border: 1px solid #878787;
   border-radius: 6px;
+  background-color: white;
 }
 .containerWeatherCards {
   padding-top: 10px;
@@ -57,7 +61,11 @@ li:first-letter {
 }
 .weatherIcon {
   text-align: center;
-  font-size: 60px;
+  margin: 0 auto;
+  padding: 0px;
+}
+.weatherIcon img {
+  width: 70%;
 }
 .temperature {
   font-size: 50px;
@@ -91,9 +99,11 @@ li:first-letter {
 .card-body {
   padding: 0;
 }
-.forecastIcon {
-  font-size: 20px;
+
+.forecastIcon img {
+  width: 75%;
 }
+
 .forecastDay {
   font-size: 18px;
 }
