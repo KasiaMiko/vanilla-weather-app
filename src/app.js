@@ -90,6 +90,9 @@ function currentLocation(){
     let apiKey = "cac6eb1808e7ad8b2e537949ab1a8c09";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayVariables);
+
+    apiUrl= `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayForecast);
 }
    navigator.geolocation.getCurrentPosition(getPosition);
  }
